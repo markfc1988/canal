@@ -1,0 +1,4 @@
+[mysqld]
+server-id=2
+read_only=0
+log_bin = 0

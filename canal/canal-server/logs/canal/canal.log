@@ -1,0 +1,101 @@
+2025-04-28 02:08:02.036 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-04-28 02:08:02.040 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-04-28 02:08:02.488 [main] ERROR com.alibaba.otter.canal.deployer.CanalLauncher - ## Something goes wrong when starting up the canal Server:
+com.alibaba.otter.canal.common.CanalException: load manager config failed.
+Caused by: java.lang.RuntimeException: requestGet remote error, request : http://192.168.1.106:8089/api/v1/config/server_polling?ip=172.17.0.2&port=11110&md5=&register=1&cluster=&name=server-1
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:100)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.doQuery(PlainCanalConfigClient.java:122)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.queryConfig(PlainCanalConfigClient.java:111)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.findServer(PlainCanalConfigClient.java:78)
+	at com.alibaba.otter.canal.deployer.CanalLauncher.main(CanalLauncher.java:78)
+Caused by: org.apache.http.NoHttpResponseException: 192.168.1.106:8089 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:90)
+	... 4 common frames omitted
+2025-04-28 02:16:49.358 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-04-28 02:16:49.361 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-04-28 02:16:49.518 [main] ERROR com.alibaba.otter.canal.deployer.CanalLauncher - ## Something goes wrong when starting up the canal Server:
+com.alibaba.otter.canal.common.CanalException: load manager config failed.
+Caused by: java.lang.RuntimeException: requestGet remote error, request : http://192.168.1.106:8089/api/v1/config/server_polling?ip=172.17.0.4&port=11110&md5=&register=1&cluster=&name=server-1
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:100)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.doQuery(PlainCanalConfigClient.java:122)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.queryConfig(PlainCanalConfigClient.java:111)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.findServer(PlainCanalConfigClient.java:78)
+	at com.alibaba.otter.canal.deployer.CanalLauncher.main(CanalLauncher.java:78)
+Caused by: org.apache.http.NoHttpResponseException: 192.168.1.106:8089 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:90)
+	... 4 common frames omitted
+2025-04-28 02:27:40.897 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-04-28 02:27:40.901 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-04-28 02:27:41.043 [main] ERROR com.alibaba.otter.canal.deployer.CanalLauncher - ## Something goes wrong when starting up the canal Server:
+com.alibaba.otter.canal.common.CanalException: load manager config failed.
+Caused by: java.lang.RuntimeException: requestGet remote error, request : http://192.168.1.106:8089/api/v1/config/server_polling?ip=172.17.0.4&port=11110&md5=&register=1&cluster=&name=server-1
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:100)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.doQuery(PlainCanalConfigClient.java:122)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.queryConfig(PlainCanalConfigClient.java:111)
+	at com.alibaba.otter.canal.instance.manager.plain.PlainCanalConfigClient.findServer(PlainCanalConfigClient.java:78)
+	at com.alibaba.otter.canal.deployer.CanalLauncher.main(CanalLauncher.java:78)
+Caused by: org.apache.http.NoHttpResponseException: 192.168.1.106:8089 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.alibaba.otter.canal.instance.manager.plain.HttpHelper.get(HttpHelper.java:90)
+	... 4 common frames omitted
+2025-04-28 02:31:23.040 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-04-28 02:31:23.043 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-04-28 02:31:23.047 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-04-28 02:31:23.065 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[172.17.0.4(172.17.0.4):11111]
+2025-04-28 02:31:23.676 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......
+2025-04-28 02:46:12.596 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## set default uncaught exception handler
+2025-04-28 02:46:12.599 [main] INFO  com.alibaba.otter.canal.deployer.CanalLauncher - ## load canal configurations
+2025-04-28 02:46:12.604 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## start the canal server.
+2025-04-28 02:46:12.623 [main] INFO  com.alibaba.otter.canal.deployer.CanalController - ## start the canal server[172.17.0.2(172.17.0.2):11111]
+2025-04-28 02:46:13.269 [main] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## the canal server is running now ......
+2025-04-28 02:46:13.524 [MultiStageCoprocessor-other-example-0] WARN  c.a.o.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta - dup apply for sql : CREATE DATABASE IF NOT EXISTS test CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci
+2025-04-28 02:46:13.554 [MultiStageCoprocessor-other-example-0] WARN  c.a.o.canal.parse.inbound.mysql.tsdb.DatabaseTableMeta - dup apply for sql : CREATE TABLE IF NOT EXISTS user_info (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  age INT,
+  email VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+2025-04-28 03:02:13.693 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## stop the canal server
+2025-04-28 03:02:14.245 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalController - ## stop the canal server[172.17.0.2(172.17.0.2):11111]
+2025-04-28 03:02:14.250 [Thread-6] WARN  com.alibaba.otter.canal.deployer.CanalStarter - ##something goes wrong when stopping canal Server:
+com.alibaba.otter.canal.common.CanalException: com.alibaba.otter.canal.server.embedded.CanalServerWithEmbedded isn't start , please check
+2025-04-28 03:02:14.250 [Thread-6] INFO  com.alibaba.otter.canal.deployer.CanalStarter - ## canal server is down.
